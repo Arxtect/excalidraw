@@ -312,7 +312,8 @@
     "laser": "Laser pointer",
     "hand": "Hand (panning tool)",
     "extraTools": "More tools",
-    "mermaidToExcalidraw": "Mermaid to Excalidraw",
+    "generate": "Generate",
+    "mermaidToExcalidraw": "Mermaid to Whiteboard",
     "convertElementType": "Toggle shape type"
   },
   "element": {
@@ -407,7 +408,7 @@
     "excalidrawplus_exportError": "Couldn't export to Excalidraw+ at this moment..."
   },
   "helpDialog": {
-    "blog": "Read our blog",
+    "blog": "",
     "click": "click",
     "deepSelect": "Deep select",
     "deepBoxSelect": "Deep select within box, and prevent dragging",
@@ -415,14 +416,14 @@
     "navigateFlowchart": "Navigate a flowchart",
     "curvedArrow": "Curved arrow",
     "curvedLine": "Curved line",
-    "documentation": "Documentation",
+    "documentation": "",
     "doubleClick": "double-click",
     "drag": "drag",
     "editor": "Editor",
     "editLineArrowPoints": "Edit line/arrow points",
     "editText": "Edit text / add label",
-    "github": "Found an issue? Submit",
-    "howto": "Follow our guides",
+    "github": "",
+    "howto": "",
     "or": "or",
     "preventBinding": "Prevent arrow binding",
     "tools": "Tools",
@@ -430,6 +431,7 @@
     "textFinish": "Finish editing (text editor)",
     "textNewLine": "Add new line (text editor)",
     "title": "Help",
+    "eraserRightClick": "Right-click drag",
     "view": "View",
     "zoomToFit": "Zoom to fit all elements",
     "zoomToSelection": "Zoom to selection",
@@ -563,7 +565,7 @@
     },
     "defaults": {
       "menuHint": "Export, preferences, and more...",
-      "center_heading": "Diagrams. Made. Simple.",
+        "center_heading": "PageFlux Whiteboard",
       "toolbarHint": "Pick a tool & Start drawing!",
       "helpHint": "Shortcuts & help"
     }
@@ -608,7 +610,7 @@
     }
   },
   "mermaid": {
-    "title": "Mermaid to Excalidraw",
+    "title": "Mermaid to Whiteboard",
     "button": "Insert",
     "description": "Currently only <flowchartLink>Flowchart</flowchartLink>,<sequenceLink> Sequence, </sequenceLink> and <classLink>Class </classLink>Diagrams are supported. The other types will be rendered as image in Excalidraw.",
     "syntax": "Mermaid Syntax",

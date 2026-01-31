@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "./dist/types"
   },
-  "include": ["**/*"],
-  "exclude": ["**/*.test.*", "tests", "types", "examples", "dist"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
+  "exclude": ["**/*.test.*", "tests", "types", "examples", "dist", "dist/types"]
 }

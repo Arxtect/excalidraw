@@ -631,6 +631,27 @@ class App extends React.Component<AppProps, AppState> {
     this.setToast(null);
   };
 
+  private scheduleRightClickEraserClear = () => {
+    if (!this.rightClickEraserActive) {
+      return;
+    }
+    if (this.rightClickEraserClearTimer !== null) {
+      window.clearTimeout(this.rightClickEraserClearTimer);
+    }
+    this.rightClickEraserClearTimer = window.setTimeout(() => {
+      this.rightClickEraserActive = false;
+      this.rightClickEraserClearTimer = null;
+    }, 200);
+  };
+
+  private clearRightClickEraserActive = () => {
+    this.rightClickEraserActive = false;
+    if (this.rightClickEraserClearTimer !== null) {
+      window.clearTimeout(this.rightClickEraserClearTimer);
+      this.rightClickEraserClearTimer = null;
+    }
+  };
+
   private elementsPendingErasure: ElementsPendingErasure = new Set();
 
   public flowChartCreator: FlowChartCreator = new FlowChartCreator();
@@ -651,6 +672,11 @@ class App extends React.Component<AppProps, AppState> {
   laserTrails = new LaserTrails(this.animationFrameHandler, this);
   eraserTrail = new EraserTrail(this.animationFrameHandler, this);
   lassoTrail = new LassoTrail(this.animationFrameHandler, this);
+  private rightClickEraserActive = false;
+  private rightClickEraserClearTimer: number | null = null;
+  private rightClickEraserPending:
+    | { pointerId: number; origin: { x: number; y: number } }
+    | null = null;
 
   onChangeEmitter = new Emitter<
     [
@@ -2859,8 +2885,9 @@ class App extends React.Component<AppProps, AppState> {
       this.excalidrawContainerRef.current;
 
     if (isTestEnv() || isDevEnv()) {
+      const testWindow = window as TestWindow;
       const setState = this.setState.bind(this);
-      Object.defineProperties(window.h, {
+      Object.defineProperties(testWindow.h, {
         state: {
           configurable: true,
           get: () => {
@@ -7060,6 +7087,20 @@ class App extends React.Component<AppProps, AppState> {
       return;
     }
 
+    const isRightClickEraserPending =
+      event.pointerType === "mouse" &&
+      event.button === POINTER_BUTTON.SECONDARY;
+    if (isRightClickEraserPending) {
+      this.rightClickEraserPending = {
+        pointerId: event.pointerId,
+        origin: { x: event.clientX, y: event.clientY },
+      };
+      if (this.rightClickEraserClearTimer !== null) {
+        window.clearTimeout(this.rightClickEraserClearTimer);
+        this.rightClickEraserClearTimer = null;
+      }
+    }
+
     this.lastPointerDownEvent = event;
 
     // we must exit before we set `cursorButton` state and `savePointer`
@@ -7121,6 +7162,39 @@ class App extends React.Component<AppProps, AppState> {
           });
         },
       );
+      return;
+    }
+
+    if (isRightClickEraserPending) {
+      const pointerDownState = this.initialPointerDownState(event);
+      this.setState({
+        selectedElementsAreBeingDragged: false,
+      });
+
+      const onPointerMove =
+        this.onPointerMoveFromPointerDownHandler(pointerDownState);
+      const onPointerUp =
+        this.onPointerUpFromPointerDownHandler(pointerDownState);
+      const onKeyDown = this.onKeyDownFromPointerDownHandler(pointerDownState);
+      const onKeyUp = this.onKeyUpFromPointerDownHandler(pointerDownState);
+
+      this.missingPointerEventCleanupEmitter.once((_event) =>
+        onPointerUp(_event || event.nativeEvent),
+      );
+
+      if (
+        !this.state.viewModeEnabled ||
+        this.state.activeTool.type === "laser"
+      ) {
+        window.addEventListener(EVENT.POINTER_MOVE, onPointerMove);
+        window.addEventListener(EVENT.POINTER_UP, onPointerUp);
+        window.addEventListener(EVENT.KEYDOWN, onKeyDown);
+        window.addEventListener(EVENT.KEYUP, onKeyUp);
+        pointerDownState.eventListeners.onMove = onPointerMove;
+        pointerDownState.eventListeners.onUp = onPointerUp;
+        pointerDownState.eventListeners.onKeyUp = onKeyUp;
+        pointerDownState.eventListeners.onKeyDown = onKeyDown;
+      }
       return;
     }
 
@@ -8877,6 +8951,38 @@ class App extends React.Component<AppProps, AppState> {
       }
       const pointerCoords = viewportCoordsToSceneCoords(event, this.state);
 
+      if (this.rightClickEraserPending) {
+        const isRightButtonDown = (event.buttons & 2) === 2;
+        if (!isRightButtonDown) {
+          this.rightClickEraserPending = null;
+          return;
+        }
+
+        const draggedDistance = pointDistance(
+          pointFrom(
+            this.rightClickEraserPending.origin.x,
+            this.rightClickEraserPending.origin.y,
+          ),
+          pointFrom(event.clientX, event.clientY),
+        );
+
+        if (draggedDistance > DRAGGING_THRESHOLD) {
+          this.rightClickEraserActive = true;
+          this.rightClickEraserPending = null;
+          if (this.state.activeTool.type !== TOOL_TYPE.eraser) {
+            this.setState({
+              activeTool: updateActiveTool(this.state, {
+                type: TOOL_TYPE.eraser,
+                lastActiveToolBeforeEraser: this.state.activeTool,
+              }),
+            });
+          }
+          this.eraserTrail.startPath(pointerCoords.x, pointerCoords.y);
+        } else {
+          return;
+        }
+      }
+
       if (this.state.activeLockedId) {
         this.setState({
           activeLockedId: null,
@@ -9745,6 +9851,9 @@ class App extends React.Component<AppProps, AppState> {
     pointerDownState: PointerDownState,
   ): (event: PointerEvent) => void {
     return withBatchedUpdates((childEvent: PointerEvent) => {
+      if (this.rightClickEraserPending) {
+        this.rightClickEraserPending = null;
+      }
       const elementsMap = this.scene.getNonDeletedElementsMap();
 
       this.removePointer(childEvent);
@@ -10399,6 +10508,17 @@ class App extends React.Component<AppProps, AppState> {
           );
         }
         this.eraseElements();
+        if (this.rightClickEraserActive) {
+          this.setState({
+            activeTool: updateActiveTool(this.state, {
+              ...(this.state.activeTool.lastActiveTool || {
+                type: TOOL_TYPE.selection,
+              }),
+              lastActiveToolBeforeEraser: null,
+            }),
+          });
+          this.scheduleRightClickEraserClear();
+        }
         return;
       } else if (this.elementsPendingErasure.size) {
         this.restoreReadyToEraseElements();
@@ -11403,6 +11523,11 @@ class App extends React.Component<AppProps, AppState> {
   ) => {
     event.preventDefault();
 
+    if (this.rightClickEraserActive) {
+      this.clearRightClickEraserActive();
+      return;
+    }
+
     if (
       (("pointerType" in event.nativeEvent &&
         event.nativeEvent.pointerType === "touch") ||
@@ -12130,26 +12255,25 @@ class App extends React.Component<AppProps, AppState> {
 // -----------------------------------------------------------------------------
 // TEST HOOKS
 // -----------------------------------------------------------------------------
-declare global {
-  interface Window {
-    h: {
-      scene: Scene;
-      elements: readonly ExcalidrawElement[];
-      state: AppState;
-      setState: React.Component<any, AppState>["setState"];
-      watchState: (prev: any, next: any) => void | undefined;
-      app: InstanceType<typeof App>;
-      history: History;
-      store: Store;
-    };
-  }
-}
+type TestWindow = Window & {
+  h?: {
+    scene: Scene;
+    elements: readonly ExcalidrawElement[];
+    state: AppState;
+    setState: (...args: any[]) => void;
+    watchState: (prev: any, next: any) => void | undefined;
+    app: InstanceType<typeof App>;
+    history: History;
+    store: Store;
+  };
+};
 
 export const createTestHook = () => {
   if (isTestEnv() || isDevEnv()) {
-    window.h = window.h || ({} as Window["h"]);
+    const testWindow = window as TestWindow;
+    testWindow.h = testWindow.h || ({} as TestWindow["h"]);
 
-    Object.defineProperties(window.h, {
+    Object.defineProperties(testWindow.h, {
       elements: {
         configurable: true,
         get() {

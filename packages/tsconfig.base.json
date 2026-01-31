@@ -22,5 +22,6 @@
       "@excalidraw/utils": ["./utils/src/index.ts"],
       "@excalidraw/utils/*": ["./utils/src/*"]
     }
-  }
+  },
+  "files": ["./excalidraw/css.d.ts"]
 }

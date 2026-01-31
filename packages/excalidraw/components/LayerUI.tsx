@@ -6,7 +6,6 @@ import {
   DEFAULT_SIDEBAR,
   TOOL_TYPE,
   arrayToMap,
-  capitalizeString,
   isShallowEqual,
 } from "@excalidraw/common";
 
@@ -47,7 +46,6 @@ import MainMenu from "./main-menu/MainMenu";
 import { ActiveConfirmDialog } from "./ActiveConfirmDialog";
 import { useEditorInterface, useStylesPanelMode } from "./App";
 import { OverwriteConfirmDialog } from "./OverwriteConfirm/OverwriteConfirm";
-import { sidebarRightIcon } from "./icons";
 import { DefaultSidebar } from "./DefaultSidebar";
 import { TTDDialog } from "./TTDDialog/TTDDialog";
 import { Stats } from "./Stats";
@@ -109,19 +107,9 @@ const DefaultMainMenu: React.FC<{
     <MainMenu __fallback>
       <MainMenu.DefaultItems.LoadScene />
       <MainMenu.DefaultItems.SaveToActiveFile />
-      {/* FIXME we should to test for this inside the item itself */}
-      {UIOptions.canvasActions.export && <MainMenu.DefaultItems.Export />}
-      {/* FIXME we should to test for this inside the item itself */}
-      {UIOptions.canvasActions.saveAsImage && (
-        <MainMenu.DefaultItems.SaveAsImage />
-      )}
       <MainMenu.DefaultItems.SearchMenu />
       <MainMenu.DefaultItems.Help />
       <MainMenu.DefaultItems.ClearCanvas />
-      <MainMenu.Separator />
-      <MainMenu.Group title="Excalidraw links">
-        <MainMenu.DefaultItems.Socials />
-      </MainMenu.Group>
       <MainMenu.Separator />
       <MainMenu.DefaultItems.ToggleTheme />
       <MainMenu.DefaultItems.ChangeCanvasBackground />
@@ -154,12 +142,12 @@ const LayerUI = ({
   renderCustomStats,
   UIOptions,
   onExportImage,
-  renderWelcomeScreen,
   children,
   app,
   isCollaborating,
   generateLinkForSelection,
 }: LayerUIProps) => {
+  const renderWelcomeScreen = false;
   const editorInterface = useEditorInterface();
   const stylesPanelMode = useStylesPanelMode();
   const isCompactStylesPanel = stylesPanelMode === "compact";
@@ -470,23 +458,6 @@ const LayerUI = ({
           tunneled away. We only render tunneled components that actually
         have defaults when host do not render anything. */}
       <DefaultMainMenu UIOptions={UIOptions} />
-      <DefaultSidebar.Trigger
-        __fallback
-        icon={sidebarRightIcon}
-        title={capitalizeString(t("toolBar.library"))}
-        onToggle={(open) => {
-          if (open) {
-            trackEvent(
-              "sidebar",
-              `${DEFAULT_SIDEBAR.name} (open)`,
-              `button (${
-                editorInterface.formFactor === "phone" ? "mobile" : "desktop"
-              })`,
-            );
-          }
-        }}
-        tab={DEFAULT_SIDEBAR.defaultTab}
-      />
       <DefaultOverwriteConfirmDialog />
       {appState.openDialog?.name === "ttd" && <TTDDialog __fallback />}
       {/* ------------------------------------------------------------------ */}

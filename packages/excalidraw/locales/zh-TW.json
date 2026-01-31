@@ -304,7 +304,7 @@
     "library": "資料庫",
     "lock": "可連續使用選取的工具",
     "penMode": "筆模式 - 避免觸摸",
-    "link": "為所選的形狀增加\b/更新連結",
+    "link": "為所選的形狀增加 / 更新連結",
     "eraser": "橡皮擦",
     "frame": "框架工具",
     "magicframe": "線框稿轉為程式碼",
@@ -312,7 +312,8 @@
     "laser": "雷射筆",
     "hand": "手形（平移工具）",
     "extraTools": "更多工具",
-    "mermaidToExcalidraw": "Mermaid 至 Excalidraw",
+    "generate": "生成",
+    "mermaidToExcalidraw": "Mermaid 至 白板",
     "convertElementType": ""
   },
   "element": {
@@ -407,7 +408,7 @@
     "excalidrawplus_exportError": "目前無法輸出至 Excalidraw+"
   },
   "helpDialog": {
-    "blog": "閱讀部落格",
+    "blog": "",
     "click": "點擊",
     "deepSelect": "深度選取",
     "deepBoxSelect": "在容器內深度選取並避免拖曳",
@@ -415,14 +416,14 @@
     "navigateFlowchart": "導覽流程圖",
     "curvedArrow": "曲箭頭",
     "curvedLine": "曲線",
-    "documentation": "文件",
+    "documentation": "",
     "doubleClick": "雙擊",
     "drag": "拖曳",
     "editor": "編輯器",
     "editLineArrowPoints": "編輯線/箭頭控制點",
     "editText": "編輯文字/增加標籤",
-    "github": "發現異常？回報問題",
-    "howto": "參照我們的說明",
+    "github": "",
+    "howto": "",
     "or": "或",
     "preventBinding": "避免箭號連結",
     "tools": "工具",
@@ -430,6 +431,7 @@
     "textFinish": "完成編輯（文字編輯器）",
     "textNewLine": "換行（文字編輯器）",
     "title": "說明",
+    "eraserRightClick": "鼠标右键拖拽",
     "view": "檢視",
     "zoomToFit": "放大至填滿畫面",
     "zoomToSelection": "縮放至選取區",
@@ -563,7 +565,7 @@
     },
     "defaults": {
       "menuHint": "輸出、偏好設定及其他...",
-      "center_heading": "圖表。製作。超簡單。",
+        "center_heading": "PageFlux 白板",
       "toolbarHint": "選個工具開始畫圖吧！",
       "helpHint": "快速鍵與說明"
     }
@@ -608,7 +610,7 @@
     }
   },
   "mermaid": {
-    "title": "Mermaid 至 Excalidraw",
+    "title": "Mermaid 至 白板",
     "button": "插入",
     "description": "目前僅支援 <flowchartLink>Flowchart</flowchartLink> 、 <sequenceLink>Sequence</sequenceLink> 及 <classLink>Class </classLink> 圖表。其餘檔案類型在 Excalidraw 將會以圖像呈現。",
     "syntax": "Mermaid 語法",
