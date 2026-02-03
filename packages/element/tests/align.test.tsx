@@ -8,17 +8,17 @@ import {
   actionAlignBottom,
   actionAlignLeft,
   actionAlignRight,
-} from "@excalidraw/excalidraw/actions";
-import { defaultLang, setLanguage } from "@excalidraw/excalidraw/i18n";
-import { Excalidraw } from "@excalidraw/excalidraw";
+} from "@pageflux/excalidraw/actions";
+import { defaultLang, setLanguage } from "@pageflux/excalidraw/i18n";
+import { Excalidraw } from "@pageflux/excalidraw";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { UI, Pointer, Keyboard } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { API } from "@pageflux/excalidraw/tests/helpers/api";
+import { UI, Pointer, Keyboard } from "@pageflux/excalidraw/tests/helpers/ui";
 import {
   act,
   unmountComponent,
   render,
-} from "@excalidraw/excalidraw/tests/test-utils";
+} from "@pageflux/excalidraw/tests/test-utils";
 
 const mouse = new Pointer("mouse");
 

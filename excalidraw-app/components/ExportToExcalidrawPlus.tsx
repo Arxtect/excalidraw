@@ -2,18 +2,18 @@ import React from "react";
 import { uploadBytes, ref } from "firebase/storage";
 import { nanoid } from "nanoid";
 
-import { trackEvent } from "@excalidraw/excalidraw/analytics";
-import { Card } from "@excalidraw/excalidraw/components/Card";
-import { ExcalidrawLogo } from "@excalidraw/excalidraw/components/ExcalidrawLogo";
-import { ToolButton } from "@excalidraw/excalidraw/components/ToolButton";
+import { trackEvent } from "@pageflux/excalidraw/analytics";
+import { Card } from "@pageflux/excalidraw/components/Card";
+import { ExcalidrawLogo } from "@pageflux/excalidraw/components/ExcalidrawLogo";
+import { ToolButton } from "@pageflux/excalidraw/components/ToolButton";
 import { MIME_TYPES, getFrame } from "@excalidraw/common";
 import {
   encryptData,
   generateEncryptionKey,
-} from "@excalidraw/excalidraw/data/encryption";
-import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
+} from "@pageflux/excalidraw/data/encryption";
+import { serializeAsJSON } from "@pageflux/excalidraw/data/json";
 import { isInitializedImageElement } from "@excalidraw/element";
-import { useI18n } from "@excalidraw/excalidraw/i18n";
+import { useI18n } from "@pageflux/excalidraw/i18n";
 
 import type {
   FileId,
@@ -23,7 +23,7 @@ import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 
 import { FILE_UPLOAD_MAX_BYTES } from "../app_constants";
 import { encodeFilesForUpload } from "../data/FileManager";

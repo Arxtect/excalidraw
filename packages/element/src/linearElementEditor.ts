@@ -41,7 +41,7 @@ import type {
   AppClassProperties,
   NullableGridSize,
   Zoom,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 import type { Bounds } from "@excalidraw/common";
 
 import {

@@ -8,7 +8,7 @@ import type {
   ToolType,
   UnsubscribeCallback,
   Zoom,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 
 import {
   DEFAULT_VERSION,

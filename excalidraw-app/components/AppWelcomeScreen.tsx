@@ -1,7 +1,7 @@
-import { loginIcon } from "@excalidraw/excalidraw/components/icons";
+import { loginIcon } from "@pageflux/excalidraw/components/icons";
 import { POINTER_EVENTS } from "@excalidraw/common";
-import { useI18n } from "@excalidraw/excalidraw/i18n";
-import { WelcomeScreen } from "@excalidraw/excalidraw/index";
+import { useI18n } from "@pageflux/excalidraw/i18n";
+import { WelcomeScreen } from "@pageflux/excalidraw/index";
 import React from "react";
 
 import { isExcalidrawPlusSignedUser } from "../app_constants";

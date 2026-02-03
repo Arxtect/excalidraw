@@ -11,7 +11,7 @@ import type {
   NormalizedZoomValue,
   NullableGridSize,
   PointerDownState,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 
 import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
 

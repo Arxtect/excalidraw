@@ -23,7 +23,7 @@ import {
   arrayToMap,
 } from "@excalidraw/common";
 
-import type { AppState } from "@excalidraw/excalidraw/types";
+import type { AppState } from "@pageflux/excalidraw/types";
 
 import {
   bindPointToSnapToElementOutline,

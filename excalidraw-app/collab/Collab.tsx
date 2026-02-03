@@ -4,8 +4,8 @@ import {
   restoreElements,
   zoomToFitBounds,
   reconcileElements,
-} from "@excalidraw/excalidraw";
-import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
+} from "@pageflux/excalidraw";
+import { ErrorDialog } from "@pageflux/excalidraw/components/ErrorDialog";
 import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@excalidraw/common";
 import {
   IDLE_THRESHOLD,
@@ -18,24 +18,24 @@ import {
   resolvablePromise,
   throttleRAF,
 } from "@excalidraw/common";
-import { decryptData } from "@excalidraw/excalidraw/data/encryption";
+import { decryptData } from "@pageflux/excalidraw/data/encryption";
 import { getVisibleSceneBounds } from "@excalidraw/element";
 import { newElementWith } from "@excalidraw/element";
 import { isImageElement, isInitializedImageElement } from "@excalidraw/element";
-import { AbortError } from "@excalidraw/excalidraw/errors";
-import { t } from "@excalidraw/excalidraw/i18n";
-import { withBatchedUpdates } from "@excalidraw/excalidraw/reactUtils";
+import { AbortError } from "@pageflux/excalidraw/errors";
+import { t } from "@pageflux/excalidraw/i18n";
+import { withBatchedUpdates } from "@pageflux/excalidraw/reactUtils";
 
 import throttle from "lodash.throttle";
 import { PureComponent } from "react";
 
-import { bumpElementVersions } from "@excalidraw/excalidraw/data/restore";
+import { bumpElementVersions } from "@pageflux/excalidraw/data/restore";
 
 import type {
   ReconciledExcalidrawElement,
   RemoteExcalidrawElement,
-} from "@excalidraw/excalidraw/data/reconcile";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
+} from "@pageflux/excalidraw/data/reconcile";
+import type { ImportedDataState } from "@pageflux/excalidraw/data/types";
 import type {
   ExcalidrawElement,
   FileId,
@@ -48,7 +48,7 @@ import type {
   SocketId,
   Collaborator,
   Gesture,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
 
 import { appJotaiStore, atom } from "../app-jotai";

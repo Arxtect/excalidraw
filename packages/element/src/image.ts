@@ -8,7 +8,7 @@ import type {
   AppClassProperties,
   DataURL,
   BinaryFiles,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 
 import { isInitializedImageElement } from "./typeChecks";
 

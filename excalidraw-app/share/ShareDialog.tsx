@@ -1,8 +1,8 @@
-import { trackEvent } from "@excalidraw/excalidraw/analytics";
-import { copyTextToSystemClipboard } from "@excalidraw/excalidraw/clipboard";
-import { Dialog } from "@excalidraw/excalidraw/components/Dialog";
-import { FilledButton } from "@excalidraw/excalidraw/components/FilledButton";
-import { TextField } from "@excalidraw/excalidraw/components/TextField";
+import { trackEvent } from "@pageflux/excalidraw/analytics";
+import { copyTextToSystemClipboard } from "@pageflux/excalidraw/clipboard";
+import { Dialog } from "@pageflux/excalidraw/components/Dialog";
+import { FilledButton } from "@pageflux/excalidraw/components/FilledButton";
+import { TextField } from "@pageflux/excalidraw/components/TextField";
 import {
   copyIcon,
   LinkIcon,
@@ -11,10 +11,10 @@ import {
   share,
   shareIOS,
   shareWindows,
-} from "@excalidraw/excalidraw/components/icons";
-import { useUIAppState } from "@excalidraw/excalidraw/context/ui-appState";
-import { useCopyStatus } from "@excalidraw/excalidraw/hooks/useCopiedIndicator";
-import { useI18n } from "@excalidraw/excalidraw/i18n";
+} from "@pageflux/excalidraw/components/icons";
+import { useUIAppState } from "@pageflux/excalidraw/context/ui-appState";
+import { useCopyStatus } from "@pageflux/excalidraw/hooks/useCopiedIndicator";
+import { useI18n } from "@pageflux/excalidraw/i18n";
 import { KEYS, getFrame } from "@excalidraw/common";
 import { useEffect, useRef, useState } from "react";
 

@@ -1,11 +1,11 @@
-import { reconcileElements } from "@excalidraw/excalidraw";
+import { reconcileElements } from "@pageflux/excalidraw";
 import { MIME_TYPES, toBrandedType } from "@excalidraw/common";
-import { decompressData } from "@excalidraw/excalidraw/data/encode";
+import { decompressData } from "@pageflux/excalidraw/data/encode";
 import {
   encryptData,
   decryptData,
-} from "@excalidraw/excalidraw/data/encryption";
-import { restoreElements } from "@excalidraw/excalidraw/data/restore";
+} from "@pageflux/excalidraw/data/encryption";
+import { restoreElements } from "@pageflux/excalidraw/data/restore";
 import { getSceneVersion } from "@excalidraw/element";
 import { initializeApp } from "firebase/app";
 import {
@@ -17,7 +17,7 @@ import {
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 
-import type { RemoteExcalidrawElement } from "@excalidraw/excalidraw/data/reconcile";
+import type { RemoteExcalidrawElement } from "@pageflux/excalidraw/data/reconcile";
 import type {
   ExcalidrawElement,
   FileId,
@@ -28,7 +28,7 @@ import type {
   BinaryFileData,
   BinaryFileMetadata,
   DataURL,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 
 import { FILE_CACHE_MAX_AGE_SEC } from "../app_constants";
 

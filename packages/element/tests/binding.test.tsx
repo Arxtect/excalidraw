@@ -2,19 +2,19 @@ import { KEYS, arrayToMap } from "@excalidraw/common";
 
 import { pointFrom } from "@excalidraw/math";
 
-import { actionWrapTextInContainer } from "@excalidraw/excalidraw/actions/actionBoundText";
+import { actionWrapTextInContainer } from "@pageflux/excalidraw/actions/actionBoundText";
 
-import { Excalidraw, isLinearElement } from "@excalidraw/excalidraw";
+import { Excalidraw, isLinearElement } from "@pageflux/excalidraw";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { UI, Pointer, Keyboard } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { API } from "@pageflux/excalidraw/tests/helpers/api";
+import { UI, Pointer, Keyboard } from "@pageflux/excalidraw/tests/helpers/ui";
 import {
   act,
   fireEvent,
   render,
-} from "@excalidraw/excalidraw/tests/test-utils";
+} from "@pageflux/excalidraw/tests/test-utils";
 
-import { defaultLang, setLanguage } from "@excalidraw/excalidraw/i18n";
+import { defaultLang, setLanguage } from "@pageflux/excalidraw/i18n";
 
 import { getTransformHandles } from "../src/transformHandles";
 import {

@@ -2,8 +2,8 @@ import {
   loginIcon,
   ExcalLogo,
   eyeIcon,
-} from "@excalidraw/excalidraw/components/icons";
-import { MainMenu } from "@excalidraw/excalidraw/index";
+} from "@pageflux/excalidraw/components/icons";
+import { MainMenu } from "@pageflux/excalidraw/index";
 import React from "react";
 
 import { isDevEnv } from "@excalidraw/common";

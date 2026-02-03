@@ -35,12 +35,12 @@ import type { Mutable } from "@excalidraw/common/utility-types";
 import type {
   AppState,
   EmbedsValidationStatus,
-} from "@excalidraw/excalidraw/types";
+} from "@pageflux/excalidraw/types";
 import type {
   ElementShape,
   ElementShapes,
   SVGPathString,
-} from "@excalidraw/excalidraw/scene/types";
+} from "@pageflux/excalidraw/scene/types";
 
 import { elementWithCanvasCache } from "./renderElement";
 

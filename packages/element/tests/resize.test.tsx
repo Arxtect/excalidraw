@@ -1,6 +1,6 @@
 import { pointFrom } from "@excalidraw/math";
 
-import { Excalidraw } from "@excalidraw/excalidraw";
+import { Excalidraw } from "@pageflux/excalidraw";
 import {
   type Bounds,
   KEYS,
@@ -9,12 +9,12 @@ import {
   arrayToMap,
 } from "@excalidraw/common";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { UI, Keyboard, Pointer } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { API } from "@pageflux/excalidraw/tests/helpers/api";
+import { UI, Keyboard, Pointer } from "@pageflux/excalidraw/tests/helpers/ui";
 import {
   render,
   unmountComponent,
-} from "@excalidraw/excalidraw/tests/test-utils";
+} from "@pageflux/excalidraw/tests/test-utils";
 
 import type { LocalPoint } from "@excalidraw/math";
 
