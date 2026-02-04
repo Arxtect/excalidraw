@@ -5,7 +5,7 @@ import {
   isShallowEqual,
   sceneCoordsToViewportCoords,
   type EditorInterface,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import { AnimationController } from "@pageflux/excalidraw/renderer/animation";
 
 import type {
@@ -19,7 +19,7 @@ import type {
 import type {
   NonDeletedExcalidrawElement,
   NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { t } from "../../i18n";
 import { renderInteractiveScene } from "../../renderer/interactiveScene";

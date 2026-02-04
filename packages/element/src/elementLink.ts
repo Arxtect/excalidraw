@@ -2,7 +2,7 @@
  * Create and link between shapes.
  */
 
-import { ELEMENT_LINK_KEY, normalizeLink } from "@excalidraw/common";
+import { ELEMENT_LINK_KEY, normalizeLink } from "@pageflux/common";
 
 import type { AppProps, AppState } from "@pageflux/excalidraw/types";
 

@@ -1,6 +1,6 @@
-import { KEYS, arrayToMap } from "@excalidraw/common";
+import { KEYS, arrayToMap } from "@pageflux/common";
 
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
 import { actionWrapTextInContainer } from "@pageflux/excalidraw/actions/actionBoundText";
 

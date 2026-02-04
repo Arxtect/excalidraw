@@ -15,7 +15,7 @@ import {
   CANVAS_SEARCH_TAB,
   DEFAULT_SIDEBAR,
   debounce,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import {
   createStore,
   entries,
@@ -27,17 +27,17 @@ import {
 } from "idb-keyval";
 
 import { appJotaiStore, atom } from "excalidraw-app/app-jotai";
-import { getNonDeletedElements } from "@excalidraw/element";
+import { getNonDeletedElements } from "@pageflux/element";
 
 import type { LibraryPersistedData } from "@pageflux/excalidraw/data/library";
 import type { ImportedDataState } from "@pageflux/excalidraw/data/types";
-import type { ExcalidrawElement, FileId } from "@excalidraw/element/types";
+import type { ExcalidrawElement, FileId } from "@pageflux/element/types";
 import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
 } from "@pageflux/excalidraw/types";
-import type { MaybePromise } from "@excalidraw/common/utility-types";
+import type { MaybePromise } from "@pageflux/common/utility-types";
 
 import { SAVE_TO_LOCAL_STORAGE_TIMEOUT, STORAGE_KEYS } from "../app_constants";
 

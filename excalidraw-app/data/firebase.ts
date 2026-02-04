@@ -1,12 +1,12 @@
 import { reconcileElements } from "@pageflux/excalidraw";
-import { MIME_TYPES, toBrandedType } from "@excalidraw/common";
+import { MIME_TYPES, toBrandedType } from "@pageflux/common";
 import { decompressData } from "@pageflux/excalidraw/data/encode";
 import {
   encryptData,
   decryptData,
 } from "@pageflux/excalidraw/data/encryption";
 import { restoreElements } from "@pageflux/excalidraw/data/restore";
-import { getSceneVersion } from "@excalidraw/element";
+import { getSceneVersion } from "@pageflux/element";
 import { initializeApp } from "firebase/app";
 import {
   getFirestore,
@@ -22,7 +22,7 @@ import type {
   ExcalidrawElement,
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   AppState,
   BinaryFileData,

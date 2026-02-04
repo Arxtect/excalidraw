@@ -16,7 +16,7 @@ import {
   vectorSubtract,
   vectorDot,
   vectorNormalize,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
 import {
   COLOR_PALETTE,
@@ -109,7 +109,7 @@ import {
   loadDesktopUIModePreference,
   setDesktopUIMode,
   isSelectionLikeTool,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import {
   getObservedAppState,
@@ -250,9 +250,9 @@ import {
   maxBindingDistance_simple,
   convertToExcalidrawElements,
   type ExcalidrawElementSkeleton,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import type { GlobalPoint, LocalPoint, Radians } from "@excalidraw/math";
+import type { GlobalPoint, LocalPoint, Radians } from "@pageflux/math";
 
 import type {
   ExcalidrawElement,
@@ -278,9 +278,9 @@ import type {
   ExcalidrawElbowArrowElement,
   SceneElementsMap,
   ExcalidrawBindableElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
-import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
+import type { Mutable, ValueOf } from "@pageflux/common/utility-types";
 
 import {
   actionAddToLibrary,

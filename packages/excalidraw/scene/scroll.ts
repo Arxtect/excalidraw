@@ -1,14 +1,14 @@
-import { getVisibleElements } from "@excalidraw/element";
+import { getVisibleElements } from "@pageflux/element";
 import {
   sceneCoordsToViewportCoords,
   viewportCoordsToSceneCoords,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import { getClosestElementBounds } from "@excalidraw/element";
+import { getClosestElementBounds } from "@pageflux/element";
 
-import { getCommonBounds } from "@excalidraw/element";
+import { getCommonBounds } from "@pageflux/element";
 
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import type { ExcalidrawElement } from "@pageflux/element/types";
 
 import type { AppState, Offsets, PointerCoords, Zoom } from "../types";
 

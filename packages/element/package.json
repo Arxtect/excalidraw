@@ -1,6 +1,6 @@
 {
-  "name": "@excalidraw/element",
-  "version": "0.18.0",
+  "name": "@pageflux/element",
+  "version": "0.18.1",
   "type": "module",
   "types": "./dist/types/element/src/index.d.ts",
   "main": "./dist/prod/index.js",
@@ -63,8 +63,8 @@
     "build:esm": "rimraf dist && node ../../scripts/buildBase.js && pnpm run gen:types"
   },
   "dependencies": {
-    "@excalidraw/common": "workspace:*",
-    "@excalidraw/math": "workspace:*",
+    "@pageflux/common": "workspace:*",
+    "@pageflux/math": "workspace:*",
     "fractional-indexing": "3.2.0",
     "lodash.throttle": "4.1.1",
     "perfect-freehand": "1.2.0",

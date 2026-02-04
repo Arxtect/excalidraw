@@ -1,6 +1,6 @@
 import { API } from "@pageflux/excalidraw/tests/helpers/api";
 
-import { mutateElement } from "@excalidraw/element";
+import { mutateElement } from "@pageflux/element";
 
 import { normalizeElementOrder } from "../src/sortElements";
 

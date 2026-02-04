@@ -1,11 +1,11 @@
 import { CaptureUpdateAction } from "@pageflux/excalidraw";
 import { trackEvent } from "@pageflux/excalidraw/analytics";
 import { encryptData } from "@pageflux/excalidraw/data/encryption";
-import { newElementWith } from "@excalidraw/element";
+import { newElementWith } from "@pageflux/element";
 import throttle from "lodash.throttle";
 
-import type { UserIdleState } from "@excalidraw/common";
-import type { OrderedExcalidrawElement } from "@excalidraw/element/types";
+import type { UserIdleState } from "@pageflux/common";
+import type { OrderedExcalidrawElement } from "@pageflux/element/types";
 import type {
   OnUserFollowedPayload,
   SocketId,

@@ -7,7 +7,7 @@ import {
   pointFrom,
   pointRotateRads,
   type Radians,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
 import {
   BOUND_TEXT_PADDING,
@@ -23,7 +23,7 @@ import {
   getVerticalOffset,
   invariant,
   applyDarkModeFilter,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import type {
   AppState,

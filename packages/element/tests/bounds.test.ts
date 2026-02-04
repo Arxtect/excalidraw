@@ -1,8 +1,8 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
-import { arrayToMap, ROUNDNESS } from "@excalidraw/common";
+import { arrayToMap, ROUNDNESS } from "@pageflux/common";
 
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "@pageflux/math";
 
 import { getElementAbsoluteCoords, getElementBounds } from "../src/bounds";
 

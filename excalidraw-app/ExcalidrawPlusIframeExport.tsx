@@ -5,7 +5,7 @@ import { useLayoutEffect, useRef } from "react";
 import type {
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type { AppState, BinaryFileData } from "@pageflux/excalidraw/types";
 
 import { STORAGE_KEYS } from "./app_constants";

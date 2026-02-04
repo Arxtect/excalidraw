@@ -10,9 +10,9 @@ import {
   curveLength,
   curvePointAtLength,
   lineSegment,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
-import { getCurvePathOps } from "@excalidraw/utils/shape";
+import { getCurvePathOps } from "@pageflux/utils/shape";
 
 import {
   DRAGGING_THRESHOLD,
@@ -22,7 +22,7 @@ import {
   invariant,
   isShallowEqual,
   getFeatureFlag,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import {
   deconstructLinearOrFreeDrawElement,
@@ -30,9 +30,9 @@ import {
   moveArrowAboveBindable,
   projectFixedPointOntoDiagonal,
   type Store,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@pageflux/math";
 
 import type {
   AppState,
@@ -42,7 +42,7 @@ import type {
   NullableGridSize,
   Zoom,
 } from "@pageflux/excalidraw/types";
-import type { Bounds } from "@excalidraw/common";
+import type { Bounds } from "@pageflux/common";
 
 import {
   calculateFixedPointForNonElbowArrowBinding,

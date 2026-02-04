@@ -1,10 +1,10 @@
-import { sceneCoordsToViewportCoords } from "@excalidraw/common";
-import { getElementAbsoluteCoords } from "@excalidraw/element";
+import { sceneCoordsToViewportCoords } from "@pageflux/common";
+import { getElementAbsoluteCoords } from "@pageflux/element";
 
 import type {
   ElementsMap,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { useExcalidrawAppState } from "../components/App";
 

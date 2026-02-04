@@ -1,4 +1,4 @@
-import { MIME_TYPES } from "@excalidraw/common";
+import { MIME_TYPES } from "@pageflux/common";
 import { getDefaultAppState } from "@pageflux/excalidraw/appState";
 import {
   copyBlobToClipboardAsPng,
@@ -20,7 +20,7 @@ import type {
   ExcalidrawElement,
   ExcalidrawFrameLikeElement,
   NonDeleted,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type { AppState, BinaryFiles } from "@pageflux/excalidraw/types";
 
 export { MIME_TYPES };

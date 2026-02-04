@@ -7,9 +7,9 @@ import {
   findLastIndex,
   getUpdatedTimestamp,
   isTestEnv,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import type { Mutable } from "@excalidraw/common/utility-types";
+import type { Mutable } from "@pageflux/common/utility-types";
 
 import type { AppState } from "@pageflux/excalidraw/types";
 

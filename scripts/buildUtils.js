@@ -14,11 +14,11 @@ const getConfig = (outdir) => ({
   entryNames: "[name]",
   assetNames: "[dir]/[name]",
   alias: {
-    "@excalidraw/common": path.resolve(__dirname, "../packages/common/src"),
-    "@excalidraw/element": path.resolve(__dirname, "../packages/element/src"),
+    "@pageflux/common": path.resolve(__dirname, "../packages/common/src"),
+    "@pageflux/element": path.resolve(__dirname, "../packages/element/src"),
     "@pageflux/excalidraw": path.resolve(__dirname, "../packages/excalidraw"),
-    "@excalidraw/math": path.resolve(__dirname, "../packages/math/src"),
-    "@excalidraw/utils": path.resolve(__dirname, "../packages/utils/src"),
+    "@pageflux/math": path.resolve(__dirname, "../packages/math/src"),
+    "@pageflux/utils": path.resolve(__dirname, "../packages/utils/src"),
   },
 });
 

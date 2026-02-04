@@ -11,7 +11,7 @@ import {
   vectorScale,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
 import {
   type Bounds,
@@ -21,7 +21,7 @@ import {
   getSizeFromPoints,
   isDevEnv,
   arrayToMap,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import type { AppState } from "@pageflux/excalidraw/types";
 

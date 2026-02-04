@@ -1,11 +1,11 @@
-import { getFontString } from "@excalidraw/common";
+import { getFontString } from "@pageflux/common";
 
-import { newElementWith } from "@excalidraw/element";
-import { measureText } from "@excalidraw/element";
+import { newElementWith } from "@pageflux/element";
+import { measureText } from "@pageflux/element";
 
-import { isTextElement } from "@excalidraw/element";
+import { isTextElement } from "@pageflux/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@pageflux/element";
 
 import { getSelectedElements } from "../scene";
 

@@ -3,7 +3,7 @@ import type {
   AppState,
   InteractiveCanvasAppState,
 } from "@pageflux/excalidraw/types";
-import type { Mutable } from "@excalidraw/common/utility-types";
+import type { Mutable } from "@pageflux/common/utility-types";
 
 import { getBoundTextElement } from "./textElement";
 

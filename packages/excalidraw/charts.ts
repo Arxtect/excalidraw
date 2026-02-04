@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
 import {
   COLOR_PALETTE,
@@ -10,17 +10,17 @@ import {
   randomId,
   isDevEnv,
   FONT_SIZES,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import {
   newTextElement,
   newLinearElement,
   newElement,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@pageflux/math";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import type { NonDeletedExcalidrawElement } from "@pageflux/element/types";
 
 export type ChartElements = readonly NonDeletedExcalidrawElement[];
 

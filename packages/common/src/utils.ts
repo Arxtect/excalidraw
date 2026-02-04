@@ -1,6 +1,6 @@
-import { average } from "@excalidraw/math";
+import { average } from "@pageflux/math";
 
-import type { FontFamilyValues, FontString } from "@excalidraw/element/types";
+import type { FontFamilyValues, FontString } from "@pageflux/element/types";
 
 import type {
   ActiveTool,

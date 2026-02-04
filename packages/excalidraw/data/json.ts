@@ -4,9 +4,9 @@ import {
   getExportSource,
   MIME_TYPES,
   VERSIONS,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import type { ExcalidrawElement } from "@pageflux/element/types";
 
 import { cleanAppStateForExport, clearAppStateForDatabase } from "../appState";
 

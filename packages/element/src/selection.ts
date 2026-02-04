@@ -1,4 +1,4 @@
-import { arrayToMap, isShallowEqual } from "@excalidraw/common";
+import { arrayToMap, isShallowEqual } from "@pageflux/common";
 
 import type {
   AppState,

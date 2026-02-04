@@ -10,37 +10,37 @@ import {
   getVerticalOffset,
   applyDarkModeFilter,
   MIME_TYPES,
-} from "@excalidraw/common";
-import { normalizeLink, toValidURL } from "@excalidraw/common";
-import { hashString } from "@excalidraw/element";
-import { getUncroppedWidthAndHeight } from "@excalidraw/element";
+} from "@pageflux/common";
+import { normalizeLink, toValidURL } from "@pageflux/common";
+import { hashString } from "@pageflux/element";
+import { getUncroppedWidthAndHeight } from "@pageflux/element";
 import {
   createPlaceholderEmbeddableLabel,
   getEmbedLink,
-} from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
-import { getBoundTextElement, getContainerElement } from "@excalidraw/element";
-import { getLineHeightInPx } from "@excalidraw/element";
+} from "@pageflux/element";
+import { LinearElementEditor } from "@pageflux/element";
+import { getBoundTextElement, getContainerElement } from "@pageflux/element";
+import { getLineHeightInPx } from "@pageflux/element";
 import {
   isArrowElement,
   isIframeLikeElement,
   isInitializedImageElement,
   isTextElement,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import { getContainingFrame } from "@excalidraw/element";
+import { getContainingFrame } from "@pageflux/element";
 
-import { getCornerRadius, isPathALoop } from "@excalidraw/element";
+import { getCornerRadius, isPathALoop } from "@pageflux/element";
 
-import { ShapeCache } from "@excalidraw/element";
+import { ShapeCache } from "@pageflux/element";
 
-import { getElementAbsoluteCoords } from "@excalidraw/element";
+import { getElementAbsoluteCoords } from "@pageflux/element";
 
 import type {
   ExcalidrawElement,
   ExcalidrawTextElementWithContainer,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import type { RenderableElementsMap, SVGRenderConfig } from "../scene/types";
 import type { AppState, BinaryFiles } from "../types";

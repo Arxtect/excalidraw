@@ -1,18 +1,18 @@
 import {
   getBoundTextElement,
   redrawTextBoundingBox,
-} from "@excalidraw/element";
-import { hasBoundTextElement, isTextElement } from "@excalidraw/element";
+} from "@pageflux/element";
+import { hasBoundTextElement, isTextElement } from "@pageflux/element";
 
-import { isInGroup } from "@excalidraw/element";
+import { isInGroup } from "@pageflux/element";
 
 import type {
   ExcalidrawElement,
   ExcalidrawTextElement,
   NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
-import type { Scene } from "@excalidraw/element";
+import type { Scene } from "@pageflux/element";
 
 import { fontSizeIcon } from "../icons";
 

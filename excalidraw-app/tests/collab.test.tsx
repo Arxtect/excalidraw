@@ -3,14 +3,14 @@ import {
   createRedoAction,
   createUndoAction,
 } from "@pageflux/excalidraw/actions/actionHistory";
-import { syncInvalidIndices } from "@excalidraw/element";
+import { syncInvalidIndices } from "@pageflux/element";
 import { API } from "@pageflux/excalidraw/tests/helpers/api";
 import { act, render, waitFor } from "@pageflux/excalidraw/tests/test-utils";
 import { vi } from "vitest";
 
-import { StoreIncrement } from "@excalidraw/element";
+import { StoreIncrement } from "@pageflux/element";
 
-import type { DurableIncrement, EphemeralIncrement } from "@excalidraw/element";
+import type { DurableIncrement, EphemeralIncrement } from "@pageflux/element";
 
 import ExcalidrawApp from "../App";
 

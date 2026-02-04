@@ -4,7 +4,7 @@ import {
   invariant,
   LINE_CONFIRM_THRESHOLD,
   ROUNDNESS,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import {
   curve,
@@ -23,9 +23,9 @@ import {
   vectorNormalize,
   vectorScale,
   type GlobalPoint,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
-import type { Curve, LineSegment, LocalPoint } from "@excalidraw/math";
+import type { Curve, LineSegment, LocalPoint } from "@pageflux/math";
 
 import type { NormalizedZoomValue, Zoom } from "@pageflux/excalidraw/types";
 

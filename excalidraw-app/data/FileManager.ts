@@ -1,7 +1,7 @@
 import { CaptureUpdateAction } from "@pageflux/excalidraw";
 import { compressData } from "@pageflux/excalidraw/data/encode";
-import { newElementWith } from "@excalidraw/element";
-import { isInitializedImageElement } from "@excalidraw/element";
+import { newElementWith } from "@pageflux/element";
+import { isInitializedImageElement } from "@pageflux/element";
 import { t } from "@pageflux/excalidraw/i18n";
 
 import type {
@@ -9,7 +9,7 @@ import type {
   ExcalidrawImageElement,
   FileId,
   InitializedExcalidrawImageElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   BinaryFileData,
   BinaryFileMetadata,

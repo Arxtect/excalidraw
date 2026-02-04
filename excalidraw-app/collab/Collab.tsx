@@ -6,7 +6,7 @@ import {
   reconcileElements,
 } from "@pageflux/excalidraw";
 import { ErrorDialog } from "@pageflux/excalidraw/components/ErrorDialog";
-import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@excalidraw/common";
+import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@pageflux/common";
 import {
   IDLE_THRESHOLD,
   ACTIVE_THRESHOLD,
@@ -17,11 +17,11 @@ import {
   preventUnload,
   resolvablePromise,
   throttleRAF,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import { decryptData } from "@pageflux/excalidraw/data/encryption";
-import { getVisibleSceneBounds } from "@excalidraw/element";
-import { newElementWith } from "@excalidraw/element";
-import { isImageElement, isInitializedImageElement } from "@excalidraw/element";
+import { getVisibleSceneBounds } from "@pageflux/element";
+import { newElementWith } from "@pageflux/element";
+import { isImageElement, isInitializedImageElement } from "@pageflux/element";
 import { AbortError } from "@pageflux/excalidraw/errors";
 import { t } from "@pageflux/excalidraw/i18n";
 import { withBatchedUpdates } from "@pageflux/excalidraw/reactUtils";
@@ -41,7 +41,7 @@ import type {
   FileId,
   InitializedExcalidrawImageElement,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   BinaryFileData,
   ExcalidrawImperativeAPI,
@@ -49,7 +49,7 @@ import type {
   Collaborator,
   Gesture,
 } from "@pageflux/excalidraw/types";
-import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
+import type { Mutable, ValueOf } from "@pageflux/common/utility-types";
 
 import { appJotaiStore, atom } from "../app-jotai";
 import {

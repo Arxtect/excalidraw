@@ -1,7 +1,7 @@
 import type {
   ExcalidrawElement,
   FontFamilyValues,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type { AppProps, AppState } from "@pageflux/excalidraw/types";
 
 import { COLOR_PALETTE } from "./colors";

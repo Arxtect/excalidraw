@@ -1,8 +1,8 @@
 import { THEME } from "@pageflux/excalidraw";
-import { EVENT, CODES, KEYS } from "@excalidraw/common";
+import { EVENT, CODES, KEYS } from "@pageflux/common";
 import { useEffect, useLayoutEffect, useState } from "react";
 
-import type { Theme } from "@excalidraw/element/types";
+import type { Theme } from "@pageflux/element/types";
 
 import { STORAGE_KEYS } from "./app_constants";
 

@@ -12,16 +12,16 @@
     "emitDeclarationOnly": true,
     "types": ["node"],
     "paths": {
-      "@excalidraw/common": ["./common/src/index.ts"],
-      "@excalidraw/common/*": ["./common/src/*"],
-      "@excalidraw/element": ["./element/src/index.ts"],
-      "@excalidraw/element/*": ["./element/src/*"],
+      "@pageflux/common": ["./common/src/index.ts"],
+      "@pageflux/common/*": ["./common/src/*"],
+      "@pageflux/element": ["./element/src/index.ts"],
+      "@pageflux/element/*": ["./element/src/*"],
       "@pageflux/excalidraw": ["./excalidraw/index.tsx"],
       "@pageflux/excalidraw/*": ["./excalidraw/*"],
-      "@excalidraw/math": ["./math/src/index.ts"],
-      "@excalidraw/math/*": ["./math/src/*"],
-      "@excalidraw/utils": ["./utils/src/index.ts"],
-      "@excalidraw/utils/*": ["./utils/src/*"]
+      "@pageflux/math": ["./math/src/index.ts"],
+      "@pageflux/math/*": ["./math/src/*"],
+      "@pageflux/utils": ["./utils/src/index.ts"],
+      "@pageflux/utils/*": ["./utils/src/*"]
     }
   },
   "files": ["./excalidraw/css.d.ts"]

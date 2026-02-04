@@ -1,32 +1,32 @@
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
+import { pointFrom, pointRotateRads } from "@pageflux/math";
 
 import {
   getBoundTextElement,
   isBindingElement,
   unbindBindingElement,
-} from "@excalidraw/element";
-import { isFrameLikeElement } from "@excalidraw/element";
+} from "@pageflux/element";
+import { isFrameLikeElement } from "@pageflux/element";
 
 import {
   getSelectedGroupIds,
   getElementsInGroup,
   isInGroup,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import { getFrameChildren } from "@excalidraw/element";
+import { getFrameChildren } from "@pageflux/element";
 
-import { updateBindings } from "@excalidraw/element";
-import { DRAGGING_THRESHOLD } from "@excalidraw/common";
+import { updateBindings } from "@pageflux/element";
+import { DRAGGING_THRESHOLD } from "@pageflux/common";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@pageflux/math";
 
 import type {
   ElementsMap,
   ExcalidrawElement,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
-import type { Scene } from "@excalidraw/element";
+import type { Scene } from "@pageflux/element";
 
 import type { AppState } from "../../types";
 

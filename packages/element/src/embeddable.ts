@@ -3,10 +3,10 @@ import {
   VERTICAL_ALIGN,
   escapeDoubleQuotes,
   getFontString,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import type { ExcalidrawProps } from "@pageflux/excalidraw/types";
-import type { MarkRequired } from "@excalidraw/common/utility-types";
+import type { MarkRequired } from "@pageflux/common/utility-types";
 
 import { newTextElement } from "./newElement";
 import { wrapText } from "./textWrapping";

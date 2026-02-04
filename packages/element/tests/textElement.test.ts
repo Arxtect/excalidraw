@@ -1,7 +1,7 @@
-import { getLineHeight } from "@excalidraw/common";
+import { getLineHeight } from "@pageflux/common";
 import { API } from "@pageflux/excalidraw/tests/helpers/api";
 
-import { FONT_FAMILY, TEXT_ALIGN, VERTICAL_ALIGN } from "@excalidraw/common";
+import { FONT_FAMILY, TEXT_ALIGN, VERTICAL_ALIGN } from "@pageflux/common";
 
 import {
   computeContainerDimensionForBoundText,

@@ -7,15 +7,15 @@ import {
   TOOL_TYPE,
   arrayToMap,
   isShallowEqual,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import { mutateElement } from "@excalidraw/element";
+import { mutateElement } from "@pageflux/element";
 
-import { showSelectedShapeActions } from "@excalidraw/element";
+import { showSelectedShapeActions } from "@pageflux/element";
 
-import { ShapeCache } from "@excalidraw/element";
+import { ShapeCache } from "@pageflux/element";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import type { NonDeletedExcalidrawElement } from "@pageflux/element/types";
 
 import { actionToggleStats } from "../actions";
 import { trackEvent } from "../analytics";

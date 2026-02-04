@@ -1,9 +1,9 @@
-import { DEFAULT_EXPORT_PADDING, EDITOR_LS_KEYS } from "@excalidraw/common";
+import { DEFAULT_EXPORT_PADDING, EDITOR_LS_KEYS } from "@pageflux/common";
 
 import type {
   NonDeletedExcalidrawElement,
   Theme,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { EditorLocalStorage } from "../../data/EditorLocalStorage";
 import {

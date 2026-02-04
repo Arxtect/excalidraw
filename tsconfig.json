@@ -19,16 +19,16 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@excalidraw/common": ["./packages/common/src/index.ts"],
-      "@excalidraw/common/*": ["./packages/common/src/*"],
+      "@pageflux/common": ["./packages/common/src/index.ts"],
+      "@pageflux/common/*": ["./packages/common/src/*"],
       "@pageflux/excalidraw": ["./packages/excalidraw/index.tsx"],
       "@pageflux/excalidraw/*": ["./packages/excalidraw/*"],
-      "@excalidraw/element": ["./packages/element/src/index.ts"],
-      "@excalidraw/element/*": ["./packages/element/src/*"],
-      "@excalidraw/math": ["./packages/math/src/index.ts"],
-      "@excalidraw/math/*": ["./packages/math/src/*"],
-      "@excalidraw/utils": ["./packages/utils/src/index.ts"],
-      "@excalidraw/utils/*": ["./packages/utils/src/*"]
+      "@pageflux/element": ["./packages/element/src/index.ts"],
+      "@pageflux/element/*": ["./packages/element/src/*"],
+      "@pageflux/math": ["./packages/math/src/index.ts"],
+      "@pageflux/math/*": ["./packages/math/src/*"],
+      "@pageflux/utils": ["./packages/utils/src/index.ts"],
+      "@pageflux/utils/*": ["./packages/utils/src/*"]
     }
   },
   "include": ["packages", "excalidraw-app"],

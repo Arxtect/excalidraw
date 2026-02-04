@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
 import { Excalidraw } from "@pageflux/excalidraw";
 import {
@@ -7,7 +7,7 @@ import {
   getSizeFromPoints,
   reseed,
   arrayToMap,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import { API } from "@pageflux/excalidraw/tests/helpers/api";
 import { UI, Keyboard, Pointer } from "@pageflux/excalidraw/tests/helpers/ui";
@@ -16,7 +16,7 @@ import {
   unmountComponent,
 } from "@pageflux/excalidraw/tests/test-utils";
 
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "@pageflux/math";
 
 import { isLinearElement } from "../src/typeChecks";
 import { resizeSingleElement } from "../src/resizeElements";

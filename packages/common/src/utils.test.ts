@@ -2,9 +2,9 @@ import {
   isTransparent,
   mapFind,
   reduceToCommonValue,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-describe("@excalidraw/common/utils", () => {
+describe("@pageflux/common/utils", () => {
   describe("isTransparent()", () => {
     it("should return true when color is rgb transparent", () => {
       expect(isTransparent("#ff00")).toEqual(true);

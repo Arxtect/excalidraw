@@ -1,6 +1,6 @@
 import { queries, buildQueries } from "@testing-library/react";
 
-import { TOOL_TYPE } from "@excalidraw/common";
+import { TOOL_TYPE } from "@pageflux/common";
 
 import type { ToolType } from "@pageflux/excalidraw/types";
 

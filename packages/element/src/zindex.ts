@@ -1,7 +1,7 @@
-import { arrayToMap, findIndex, findLastIndex } from "@excalidraw/common";
+import { arrayToMap, findIndex, findLastIndex } from "@pageflux/common";
 
 import type { AppState } from "@pageflux/excalidraw/types";
-import type { GlobalPoint } from "@excalidraw/math";
+import type { GlobalPoint } from "@pageflux/math";
 
 import { isFrameLikeElement, isTextElement } from "./typeChecks";
 import { getElementsInGroup } from "./groups";

@@ -1,4 +1,4 @@
-import { isFiniteNumber, pointFrom } from "@excalidraw/math";
+import { isFiniteNumber, pointFrom } from "@pageflux/math";
 
 import {
   type CombineBrandsIfNeeded,
@@ -18,23 +18,23 @@ import {
   getSizeFromPoints,
   normalizeLink,
   getLineHeight,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import {
   calculateFixedPointForNonElbowArrowBinding,
   getNonDeletedElements,
   isPointInElement,
   isValidPolygon,
   projectFixedPointOntoDiagonal,
-} from "@excalidraw/element";
-import { normalizeFixedPoint } from "@excalidraw/element";
+} from "@pageflux/element";
+import { normalizeFixedPoint } from "@pageflux/element";
 import {
   updateElbowArrowPoints,
   validateElbowPoints,
-} from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
-import { bumpVersion } from "@excalidraw/element";
-import { getContainerElement } from "@excalidraw/element";
-import { detectLineHeight } from "@excalidraw/element";
+} from "@pageflux/element";
+import { LinearElementEditor } from "@pageflux/element";
+import { bumpVersion } from "@pageflux/element";
+import { getContainerElement } from "@pageflux/element";
+import { detectLineHeight } from "@pageflux/element";
 import {
   isArrowBoundToElement,
   isArrowElement,
@@ -43,17 +43,17 @@ import {
   isLineElement,
   isTextElement,
   isUsingAdaptiveRadius,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import { syncInvalidIndices } from "@excalidraw/element";
+import { syncInvalidIndices } from "@pageflux/element";
 
-import { refreshTextDimensions } from "@excalidraw/element";
+import { refreshTextDimensions } from "@pageflux/element";
 
-import { getNormalizedDimensions } from "@excalidraw/element";
+import { getNormalizedDimensions } from "@pageflux/element";
 
-import { isInvisiblySmallElement } from "@excalidraw/element";
+import { isInvisiblySmallElement } from "@pageflux/element";
 
-import type { LocalPoint, Radians } from "@excalidraw/math";
+import type { LocalPoint, Radians } from "@pageflux/math";
 
 import type {
   ElementsMap,
@@ -70,9 +70,9 @@ import type {
   NonDeletedSceneElementsMap,
   OrderedExcalidrawElement,
   StrokeRoundness,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
-import type { MarkOptional, Mutable } from "@excalidraw/common/utility-types";
+import type { MarkOptional, Mutable } from "@pageflux/common/utility-types";
 
 import { getDefaultAppState } from "../appState";
 

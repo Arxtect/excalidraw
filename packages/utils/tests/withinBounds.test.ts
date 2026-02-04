@@ -1,6 +1,6 @@
 import { API } from "@pageflux/excalidraw/tests/helpers/api";
 
-import type { Bounds } from "@excalidraw/common";
+import type { Bounds } from "@pageflux/common";
 
 import {
   elementPartiallyOverlapsWithOrContainsBBox,

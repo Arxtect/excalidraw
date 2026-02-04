@@ -1,16 +1,16 @@
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
+import { pointFrom, pointRotateRads } from "@pageflux/math";
 
-import { MIME_TYPES } from "@excalidraw/common";
-import { getElementAbsoluteCoords } from "@excalidraw/element";
-import { hitElementBoundingBox } from "@excalidraw/element";
+import { MIME_TYPES } from "@pageflux/common";
+import { getElementAbsoluteCoords } from "@pageflux/element";
+import { hitElementBoundingBox } from "@pageflux/element";
 
-import type { GlobalPoint, Radians } from "@excalidraw/math";
+import type { GlobalPoint, Radians } from "@pageflux/math";
 
-import type { Bounds } from "@excalidraw/common";
+import type { Bounds } from "@pageflux/common";
 import type {
   ElementsMap,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import type { AppState, UIAppState } from "../../types";
 

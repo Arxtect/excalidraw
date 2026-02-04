@@ -15,7 +15,7 @@ import {
 import { useUIAppState } from "@pageflux/excalidraw/context/ui-appState";
 import { useCopyStatus } from "@pageflux/excalidraw/hooks/useCopiedIndicator";
 import { useI18n } from "@pageflux/excalidraw/i18n";
-import { KEYS, getFrame } from "@excalidraw/common";
+import { KEYS, getFrame } from "@pageflux/common";
 import { useEffect, useRef, useState } from "react";
 
 import { atom, useAtom, useAtomValue } from "../app-jotai";

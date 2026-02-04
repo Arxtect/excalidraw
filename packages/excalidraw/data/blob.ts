@@ -5,10 +5,10 @@ import {
   MIME_TYPES,
   bytesToHexString,
   isPromiseLike,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import type { ValueOf } from "@excalidraw/common/utility-types";
-import type { ExcalidrawElement, FileId } from "@excalidraw/element/types";
+import type { ValueOf } from "@pageflux/common/utility-types";
+import type { ExcalidrawElement, FileId } from "@pageflux/element/types";
 
 import { cleanAppStateForExport } from "../appState";
 

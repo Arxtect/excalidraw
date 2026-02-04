@@ -1,5 +1,5 @@
-import { ARROW_TYPE } from "@excalidraw/common";
-import { pointFrom } from "@excalidraw/math";
+import { ARROW_TYPE } from "@pageflux/common";
+import { pointFrom } from "@pageflux/math";
 import { Excalidraw } from "@pageflux/excalidraw";
 import { actionSelectAll } from "@pageflux/excalidraw/actions";
 import { actionDuplicateSelection } from "@pageflux/excalidraw/actions/actionDuplicateSelection";
@@ -12,10 +12,10 @@ import {
   queryByTestId,
   render,
 } from "@pageflux/excalidraw/tests/test-utils";
-import "@excalidraw/utils/test-utils";
-import { bindBindingElement } from "@excalidraw/element";
+import "@pageflux/utils/test-utils";
+import { bindBindingElement } from "@pageflux/element";
 
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "@pageflux/math";
 
 import { Scene } from "../src/Scene";
 

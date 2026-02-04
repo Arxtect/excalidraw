@@ -1,15 +1,15 @@
-import { degreesToRadians, radiansToDegrees } from "@excalidraw/math";
+import { degreesToRadians, radiansToDegrees } from "@pageflux/math";
 
-import { getBoundTextElement } from "@excalidraw/element";
-import { isArrowElement } from "@excalidraw/element";
+import { getBoundTextElement } from "@pageflux/element";
+import { isArrowElement } from "@pageflux/element";
 
-import { isInGroup } from "@excalidraw/element";
+import { isInGroup } from "@pageflux/element";
 
-import type { Degrees } from "@excalidraw/math";
+import type { Degrees } from "@pageflux/math";
 
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import type { ExcalidrawElement } from "@pageflux/element/types";
 
-import type { Scene } from "@excalidraw/element";
+import type { Scene } from "@pageflux/element";
 
 import { angleIcon } from "../icons";
 

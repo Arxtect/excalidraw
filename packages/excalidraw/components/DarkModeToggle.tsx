@@ -1,6 +1,6 @@
-import { THEME } from "@excalidraw/common";
+import { THEME } from "@pageflux/common";
 
-import type { Theme } from "@excalidraw/element/types";
+import type { Theme } from "@pageflux/element/types";
 
 import { t } from "../i18n";
 

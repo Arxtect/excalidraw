@@ -1,15 +1,15 @@
 import {
   SHIFT_LOCKING_ANGLE,
   viewportCoordsToSceneCoords,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import {
   normalizeRadians,
   radiansBetweenAngles,
   radiansDifference,
   type Radians,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
-import { pointsEqual } from "@excalidraw/math";
+import { pointsEqual } from "@pageflux/math";
 
 import type { AppState, Offsets, Zoom } from "@pageflux/excalidraw/types";
 

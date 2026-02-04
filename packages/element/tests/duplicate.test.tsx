@@ -1,11 +1,11 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
 import {
   FONT_FAMILY,
   ORIG_ID,
   ROUNDNESS,
   isPrimitive,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import { Excalidraw, mutateElement } from "@pageflux/excalidraw";
 
@@ -22,7 +22,7 @@ import {
   render,
 } from "@pageflux/excalidraw/tests/test-utils";
 
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "@pageflux/math";
 
 import { duplicateElement, duplicateElements } from "../src/duplicate";
 

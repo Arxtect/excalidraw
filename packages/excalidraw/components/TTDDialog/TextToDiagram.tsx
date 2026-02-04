@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import type { NonDeletedExcalidrawElement } from "@pageflux/element/types";
 
 import { useAtom, useAtomValue } from "../../editor-jotai";
 

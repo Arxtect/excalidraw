@@ -6,11 +6,11 @@ import {
   randomId,
   Emitter,
   toIterable,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import type App from "@pageflux/excalidraw/components/App";
 
-import type { DTO, ValueOf } from "@excalidraw/common/utility-types";
+import type { DTO, ValueOf } from "@pageflux/common/utility-types";
 
 import type { AppState, ObservedAppState } from "@pageflux/excalidraw/types";
 

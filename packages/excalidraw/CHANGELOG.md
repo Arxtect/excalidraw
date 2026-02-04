@@ -741,7 +741,7 @@ The `updateScene` API has changed due to the added `Store` component, as part of
 
 - Enable consistent type imports eslint rule [#7992](https://github.com/excalidraw/excalidraw/pull/7992)
 
-- Export types for @excalidraw/utils [#7736](https://github.com/excalidraw/excalidraw/pull/7736)
+- Export types for @pageflux/utils [#7736](https://github.com/excalidraw/excalidraw/pull/7736)
 
 - Create ESM build for utils package 🥳 [#7500](https://github.com/excalidraw/excalidraw/pull/7500)
 
@@ -1687,7 +1687,7 @@ For more details refer to the [docs](https://docs.excalidraw.com)
 
 - Support segment midpoints in line editor [#5641](https://github.com/excalidraw/excalidraw/pull/5641)
 
-- Added exportPadding to PNG (blob) export in @excalidraw/utils [#5626](https://github.com/excalidraw/excalidraw/pull/5626)
+- Added exportPadding to PNG (blob) export in @pageflux/utils [#5626](https://github.com/excalidraw/excalidraw/pull/5626)
 
 - Introduce ExcalidrawElements and ExcalidrawAppState provider [#5463](https://github.com/excalidraw/excalidraw/pull/5463)
 

@@ -1,9 +1,9 @@
 import tinycolor from "tinycolor2";
 
-import { clamp } from "@excalidraw/math";
-import { degreesToRadians } from "@excalidraw/math";
+import { clamp } from "@pageflux/math";
+import { degreesToRadians } from "@pageflux/math";
 
-import type { Degrees } from "@excalidraw/math";
+import type { Degrees } from "@pageflux/math";
 
 // ---------------------------------------------------------------------------
 // Dark mode color transformation

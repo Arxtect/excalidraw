@@ -1,21 +1,21 @@
-import { degreesToRadians, pointFrom, pointRotateRads } from "@excalidraw/math";
+import { degreesToRadians, pointFrom, pointRotateRads } from "@pageflux/math";
 import { act, fireEvent, queryByTestId } from "@testing-library/react";
 import React from "react";
 import { vi } from "vitest";
 
-import { setDateTimeForTests, reseed } from "@excalidraw/common";
+import { setDateTimeForTests, reseed } from "@pageflux/common";
 
-import { isInGroup } from "@excalidraw/element";
+import { isInGroup } from "@pageflux/element";
 
-import { isTextElement } from "@excalidraw/element";
+import { isTextElement } from "@pageflux/element";
 
-import type { Degrees } from "@excalidraw/math";
+import type { Degrees } from "@pageflux/math";
 
 import type {
   ExcalidrawElement,
   ExcalidrawLinearElement,
   ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { Excalidraw, getCommonBounds } from "../..";
 import { actionGroup } from "../../actions";

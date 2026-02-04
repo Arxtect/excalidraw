@@ -1,4 +1,4 @@
-import { MIME_TYPES } from "@excalidraw/common";
+import { MIME_TYPES } from "@pageflux/common";
 import * as mockedSceneExportUtils from "@pageflux/excalidraw/scene/export";
 import { diagramFactory } from "@pageflux/excalidraw/tests/fixtures/diagramFixture";
 import { vi } from "vitest";

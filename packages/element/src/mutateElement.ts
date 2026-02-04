@@ -2,11 +2,11 @@ import {
   getSizeFromPoints,
   randomInteger,
   getUpdatedTimestamp,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@pageflux/math";
 
-import type { Mutable } from "@excalidraw/common/utility-types";
+import type { Mutable } from "@pageflux/common/utility-types";
 
 import { ShapeCache } from "./shape";
 

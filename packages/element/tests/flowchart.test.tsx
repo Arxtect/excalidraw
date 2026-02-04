@@ -1,4 +1,4 @@
-import { KEYS, reseed } from "@excalidraw/common";
+import { KEYS, reseed } from "@pageflux/common";
 
 import { Excalidraw } from "@pageflux/excalidraw";
 

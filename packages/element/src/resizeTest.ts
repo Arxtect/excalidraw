@@ -3,17 +3,17 @@ import {
   pointOnLineSegment,
   pointRotateRads,
   type Radians,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
 import {
   SIDE_RESIZING_THRESHOLD,
   type EditorInterface,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
-import type { GlobalPoint, LineSegment, LocalPoint } from "@excalidraw/math";
+import type { GlobalPoint, LineSegment, LocalPoint } from "@pageflux/math";
 
 import type { AppState, Zoom } from "@pageflux/excalidraw/types";
-import type { Bounds } from "@excalidraw/common";
+import type { Bounds } from "@pageflux/common";
 
 import { getElementAbsoluteCoords } from "./bounds";
 import {

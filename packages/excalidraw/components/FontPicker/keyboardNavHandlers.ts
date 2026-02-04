@@ -1,6 +1,6 @@
-import { KEYS } from "@excalidraw/common";
+import { KEYS } from "@pageflux/common";
 
-import type { Node } from "@excalidraw/common";
+import type { Node } from "@pageflux/common";
 
 import { type FontDescriptor } from "./FontPickerList";
 

@@ -8,13 +8,13 @@ import {
   KEYS,
   capitalizeString,
   isWritableElement,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import { actionToggleShapeSwitch } from "@pageflux/excalidraw/actions/actionToggleShapeSwitch";
 
 import { getShortcutKey } from "@pageflux/excalidraw/shortcut";
 
-import type { MarkRequired } from "@excalidraw/common/utility-types";
+import type { MarkRequired } from "@pageflux/common/utility-types";
 
 import {
   actionClearCanvas,

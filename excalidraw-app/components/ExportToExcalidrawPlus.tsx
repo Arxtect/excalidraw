@@ -6,19 +6,19 @@ import { trackEvent } from "@pageflux/excalidraw/analytics";
 import { Card } from "@pageflux/excalidraw/components/Card";
 import { ExcalidrawLogo } from "@pageflux/excalidraw/components/ExcalidrawLogo";
 import { ToolButton } from "@pageflux/excalidraw/components/ToolButton";
-import { MIME_TYPES, getFrame } from "@excalidraw/common";
+import { MIME_TYPES, getFrame } from "@pageflux/common";
 import {
   encryptData,
   generateEncryptionKey,
 } from "@pageflux/excalidraw/data/encryption";
 import { serializeAsJSON } from "@pageflux/excalidraw/data/json";
-import { isInitializedImageElement } from "@excalidraw/element";
+import { isInitializedImageElement } from "@pageflux/element";
 import { useI18n } from "@pageflux/excalidraw/i18n";
 
 import type {
   FileId,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   AppState,
   BinaryFileData,

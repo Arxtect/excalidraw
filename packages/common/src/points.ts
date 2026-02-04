@@ -2,7 +2,7 @@ import {
   pointFromPair,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "@pageflux/math";
 
 import type { NullableGridSize } from "@pageflux/excalidraw/types";
 

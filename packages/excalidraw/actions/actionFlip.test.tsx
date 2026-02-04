@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 
 import { Excalidraw } from "../index";
 import { API } from "../tests/helpers/api";

@@ -1,22 +1,25 @@
-# Excalidraw (@pageflux/excalidraw)
+# Excalidraw (@pageflux/*)
 
-This repo consumes Excalidraw via the published npm package `@pageflux/excalidraw`.
-The local `packages/excalidraw` workspace has been removed.
+This repo is the source of the Pageflux-scoped packages:
 
-## Install/Update
+- `@pageflux/common`
+- `@pageflux/math`
+- `@pageflux/element`
+- `@pageflux/utils`
+- `@pageflux/excalidraw`
 
-After publishing a new version:
+PointerWeb consumes `@pageflux/excalidraw` from npm.
 
-```bash
-pnpm -C /home/jancsitech/dev/pageflux/PointerWeb install
-```
+## Publish
 
-## Publish (from external Excalidraw repo)
-
-Use the helper script in the Excalidraw repo:
+Use the helper script in this repo:
 
 ```bash
 /home/jancsitech/dev/pageflux/excalidraw/publish-excalidraw.sh
 ```
 
-The script builds and publishes `@pageflux/excalidraw`, then you can update this repo with `pnpm install`.
+It builds and publishes all `@pageflux/*` packages. After publishing, update PointerWeb:
+
+```bash
+pnpm -C /home/jancsitech/dev/pageflux/PointerWeb install
+```

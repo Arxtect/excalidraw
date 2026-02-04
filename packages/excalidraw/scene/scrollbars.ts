@@ -1,6 +1,6 @@
-import { getGlobalCSSVariable } from "@excalidraw/common";
+import { getGlobalCSSVariable } from "@pageflux/common";
 
-import { getCommonBounds } from "@excalidraw/element";
+import { getCommonBounds } from "@pageflux/element";
 
 import { getLanguage } from "../i18n";
 

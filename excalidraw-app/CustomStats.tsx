@@ -5,11 +5,11 @@ import {
   debounce,
   getVersion,
   nFormatter,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import { t } from "@pageflux/excalidraw/i18n";
 import { useEffect, useState } from "react";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import type { NonDeletedExcalidrawElement } from "@pageflux/element/types";
 import type { UIAppState } from "@pageflux/excalidraw/types";
 
 import {

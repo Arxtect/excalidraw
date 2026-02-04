@@ -10,17 +10,17 @@ import {
   isTestEnv,
   MIME_TYPES,
   applyDarkModeFilter,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 
 import {
   getTextFromElements,
   originalContainerCache,
   updateBoundElements,
   updateOriginalContainerCache,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
-import { LinearElementEditor } from "@excalidraw/element";
-import { bumpVersion } from "@excalidraw/element";
+import { LinearElementEditor } from "@pageflux/element";
+import { bumpVersion } from "@pageflux/element";
 import {
   getBoundTextElementId,
   getContainerElement,
@@ -31,22 +31,22 @@ import {
   computeContainerDimensionForBoundText,
   computeBoundTextPosition,
   getBoundTextElement,
-} from "@excalidraw/element";
-import { getTextWidth } from "@excalidraw/element";
-import { normalizeText } from "@excalidraw/element";
-import { wrapText } from "@excalidraw/element";
+} from "@pageflux/element";
+import { getTextWidth } from "@pageflux/element";
+import { normalizeText } from "@pageflux/element";
+import { wrapText } from "@pageflux/element";
 import {
   isArrowElement,
   isBoundToContainer,
   isTextElement,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
 import type {
   ExcalidrawElement,
   ExcalidrawLinearElement,
   ExcalidrawTextElementWithContainer,
   ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { actionSaveToActiveFile } from "../actions";
 

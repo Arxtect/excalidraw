@@ -1,12 +1,12 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@pageflux/math";
 import { vi } from "vitest";
 
-import { DEFAULT_SIDEBAR, FONT_FAMILY, ROUNDNESS } from "@excalidraw/common";
+import { DEFAULT_SIDEBAR, FONT_FAMILY, ROUNDNESS } from "@pageflux/common";
 
-import { newElementWith } from "@excalidraw/element";
-import * as sizeHelpers from "@excalidraw/element";
+import { newElementWith } from "@pageflux/element";
+import * as sizeHelpers from "@pageflux/element";
 
-import type { LocalPoint } from "@excalidraw/math";
+import type { LocalPoint } from "@pageflux/math";
 
 import type {
   ExcalidrawArrowElement,
@@ -14,7 +14,7 @@ import type {
   ExcalidrawFreeDrawElement,
   ExcalidrawLinearElement,
   ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type { NormalizedZoomValue } from "@pageflux/excalidraw/types";
 
 import { API } from "../helpers/api";

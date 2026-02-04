@@ -8,26 +8,26 @@ import {
   IV_LENGTH_BYTES,
 } from "@pageflux/excalidraw/data/encryption";
 import { serializeAsJSON } from "@pageflux/excalidraw/data/json";
-import { isInvisiblySmallElement } from "@excalidraw/element";
-import { isInitializedImageElement } from "@excalidraw/element";
+import { isInvisiblySmallElement } from "@pageflux/element";
+import { isInitializedImageElement } from "@pageflux/element";
 import { t } from "@pageflux/excalidraw/i18n";
-import { bytesToHexString } from "@excalidraw/common";
+import { bytesToHexString } from "@pageflux/common";
 
-import type { UserIdleState } from "@excalidraw/common";
+import type { UserIdleState } from "@pageflux/common";
 import type { ImportedDataState } from "@pageflux/excalidraw/data/types";
-import type { SceneBounds } from "@excalidraw/element";
+import type { SceneBounds } from "@pageflux/element";
 import type {
   ExcalidrawElement,
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   AppState,
   BinaryFileData,
   BinaryFiles,
   SocketId,
 } from "@pageflux/excalidraw/types";
-import type { MakeBrand } from "@excalidraw/common/utility-types";
+import type { MakeBrand } from "@pageflux/common/utility-types";
 
 import {
   DELETED_ELEMENT_TIMEOUT,

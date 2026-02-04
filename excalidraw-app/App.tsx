@@ -30,7 +30,7 @@ import {
   resolvablePromise,
   isRunningInIframe,
   isDevEnv,
-} from "@excalidraw/common";
+} from "@pageflux/common";
 import polyfill from "@pageflux/excalidraw/polyfill";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { loadFromBlob } from "@pageflux/excalidraw/data/blob";
@@ -47,14 +47,14 @@ import {
   share,
   youtubeIcon,
 } from "@pageflux/excalidraw/components/icons";
-import { isElementLink } from "@excalidraw/element";
+import { isElementLink } from "@pageflux/element";
 import {
   bumpElementVersions,
   restoreAppState,
   restoreElements,
 } from "@pageflux/excalidraw/data/restore";
-import { newElementWith } from "@excalidraw/element";
-import { isInitializedImageElement } from "@excalidraw/element";
+import { newElementWith } from "@pageflux/element";
+import { isInitializedImageElement } from "@pageflux/element";
 import clsx from "clsx";
 import {
   parseLibraryTokensFromUrl,
@@ -67,7 +67,7 @@ import type {
   FileId,
   NonDeletedExcalidrawElement,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 import type {
   AppState,
   ExcalidrawImperativeAPI,
@@ -75,8 +75,8 @@ import type {
   ExcalidrawInitialDataState,
   UIAppState,
 } from "@pageflux/excalidraw/types";
-import type { ResolutionType } from "@excalidraw/common/utility-types";
-import type { ResolvablePromise } from "@excalidraw/common/utils";
+import type { ResolutionType } from "@pageflux/common/utility-types";
+import type { ResolvablePromise } from "@pageflux/common/utils";
 
 import CustomStats from "./CustomStats";
 import {

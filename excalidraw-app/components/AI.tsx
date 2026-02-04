@@ -7,7 +7,7 @@ import {
   TTDStreamFetch,
 } from "@pageflux/excalidraw";
 import { getDataURL } from "@pageflux/excalidraw/data/blob";
-import { safelyParseJSON } from "@excalidraw/common";
+import { safelyParseJSON } from "@pageflux/common";
 
 import type { ExcalidrawImperativeAPI } from "@pageflux/excalidraw/types";
 

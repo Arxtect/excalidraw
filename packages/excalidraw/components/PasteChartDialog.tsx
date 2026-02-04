@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 
-import type { ChartType } from "@excalidraw/element/types";
+import type { ChartType } from "@pageflux/element/types";
 
 import { trackEvent } from "../analytics";
 import { renderSpreadsheet } from "../charts";

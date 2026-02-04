@@ -1,19 +1,19 @@
-# @excalidraw/common
+# @pageflux/common
 
 ## Install
 
 ```bash
-npm install @excalidraw/common
+npm install @pageflux/common
 ```
 
 If you prefer Yarn over npm, use this command to install the Excalidraw utils package:
 
 ```bash
-yarn add @excalidraw/common
+yarn add @pageflux/common
 ```
 
 With PNPM, similarly install the package with this command:
 
 ```bash
-pnpm add @excalidraw/common
+pnpm add @pageflux/common
 ```

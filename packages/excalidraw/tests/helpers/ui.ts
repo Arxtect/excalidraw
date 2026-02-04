@@ -1,11 +1,11 @@
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
+import { pointFrom, pointRotateRads } from "@pageflux/math";
 
 import {
   elementCenterPoint,
   getCommonBounds,
   getElementPointsCoords,
-} from "@excalidraw/element";
-import { cropElement } from "@excalidraw/element";
+} from "@pageflux/element";
+import { cropElement } from "@pageflux/element";
 import {
   getTransformHandles,
   getTransformHandlesFromCoords,
@@ -13,18 +13,18 @@ import {
   OMIT_SIDES_FOR_MULTIPLE_ELEMENTS,
   type TransformHandle,
   type TransformHandleDirection,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 import {
   isLinearElement,
   isFreeDrawElement,
   isTextElement,
   isFrameLikeElement,
-} from "@excalidraw/element";
-import { KEYS, arrayToMap } from "@excalidraw/common";
+} from "@pageflux/element";
+import { KEYS, arrayToMap } from "@pageflux/common";
 
-import type { GlobalPoint, LocalPoint, Radians } from "@excalidraw/math";
+import type { GlobalPoint, LocalPoint, Radians } from "@pageflux/math";
 
-import type { TransformHandleType } from "@excalidraw/element";
+import type { TransformHandleType } from "@pageflux/element";
 import type {
   ExcalidrawElement,
   ExcalidrawLinearElement,
@@ -37,7 +37,7 @@ import type {
   ExcalidrawTextElementWithContainer,
   ExcalidrawImageElement,
   ElementsMap,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { createTestHook } from "../../components/App";
 import { getTextEditor, TEXT_EDITOR_SELECTOR } from "../queries/dom";

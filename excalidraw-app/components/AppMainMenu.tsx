@@ -6,9 +6,9 @@ import {
 import { MainMenu } from "@pageflux/excalidraw/index";
 import React from "react";
 
-import { isDevEnv } from "@excalidraw/common";
+import { isDevEnv } from "@pageflux/common";
 
-import type { Theme } from "@excalidraw/element/types";
+import type { Theme } from "@pageflux/element/types";
 
 import { LanguageList } from "../app-language/LanguageList";
 import { isExcalidrawPlusSignedUser } from "../app_constants";

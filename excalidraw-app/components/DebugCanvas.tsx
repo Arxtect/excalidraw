@@ -8,36 +8,36 @@ import {
   getNormalizedCanvasDimensions,
 } from "@pageflux/excalidraw/renderer/helpers";
 import { type AppState } from "@pageflux/excalidraw/types";
-import { arrayToMap, throttleRAF } from "@excalidraw/common";
+import { arrayToMap, throttleRAF } from "@pageflux/common";
 import { useCallback } from "react";
 
 import {
   getGlobalFixedPointForBindableElement,
   isArrowElement,
   isBindableElement,
-} from "@excalidraw/element";
+} from "@pageflux/element";
 
 import {
   isLineSegment,
   type GlobalPoint,
   type LineSegment,
-} from "@excalidraw/math";
-import { isCurve } from "@excalidraw/math/curve";
+} from "@pageflux/math";
+import { isCurve } from "@pageflux/math/curve";
 
 import React from "react";
 
-import type { Curve } from "@excalidraw/math";
+import type { Curve } from "@pageflux/math";
 import type {
   DebugElement,
   DebugPolygon,
-} from "@excalidraw/element/visualdebug";
+} from "@pageflux/element/visualdebug";
 import type {
   ElementsMap,
   ExcalidrawArrowElement,
   ExcalidrawBindableElement,
   FixedPointBinding,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@pageflux/element/types";
 
 import { STORAGE_KEYS } from "../app_constants";
 
